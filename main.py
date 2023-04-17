@@ -4,7 +4,7 @@ import os
 
 
 write_file = True
-old_mode = True
+old_mode = False
 
 
 def analyze_file(file_name, destination_file, write_file, old_mode):
@@ -202,12 +202,6 @@ def analyze_file(file_name, destination_file, write_file, old_mode):
 
 
 def get_file_names(directory_path):
-    """
-    USED!
-    Gets all files in a directory
-    :param directory_path:
-    :return:
-    """
     filename_list = []
     for filename in os.listdir(directory_path):
         if os.path.isfile(os.path.join(directory_path, filename)):
